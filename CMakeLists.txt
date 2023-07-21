@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.0 FATAL_ERROR)
+project(lesh VERSION 0.1.0)
+set(CMAKE_C_FLAGS "-Wall -Wextra")
+add_executable(lesh main.c prompt.c parser.c vector.c builtins.c utils.c)
+target_link_libraries(lesh readline)
